@@ -1,0 +1,40 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Test and coverage output
+coverage/
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor and operating-system files
+.DS_Store
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# setup-project: local project context (managed)
+/docs/PRD.md
+/docs/ARCHITECTURE.md
+/docs/ARCHITECTURE_ESSENTIALS.md
+/docs/SECURITY.md
+/docs/TEST_CASES.md
