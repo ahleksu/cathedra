@@ -4,7 +4,7 @@ Cathedra is a browser-only classroom seating map for an Industry Lecturer at the
 
 The application models a fixed 42-seat computer laboratory. Configurable sections keep student rosters and seat assignments separate. Student data stays in the current browser, with manual JSON backup and restoration.
 
-The application is implemented locally. Manual acceptance is pending. AWS hosting configuration is prepared, but no AWS deployment is claimed.
+The application is implemented locally. The instructor accepted the local preview on September 13, 2026. AWS hosting configuration is prepared, but no AWS deployment is claimed.
 
 ## Local development
 

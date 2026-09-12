@@ -15,6 +15,6 @@ Tests use synthetic records. Browser coverage includes section isolation, seatin
 
 The camera preset test originally read geometry before rendering completed. Waiting for the projected position resolved that test failure. The full browser suite then passed.
 
-The rendered desktop room shows three seats per left row, four per right row, a central aisle, pale desks, side windows, and an instructor desk. Room dimensions are estimates. The instructor must complete manual visual acceptance.
+The rendered desktop room shows three seats per left row, four per right row, a central aisle, pale desks, side windows, and an instructor desk. Room dimensions are estimates. The instructor accepted the local preview on September 13, 2026.
 
-Manual acceptance, other browser engines, physical touch devices, and AWS deployment remain pending. Passing automated tests does not establish those outcomes.
+Other browser engines, physical touch devices, and AWS deployment remain pending. Passing automated tests does not establish those outcomes.
