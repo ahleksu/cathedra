@@ -4,7 +4,7 @@
 
 **Project:** Cathedra
 
-Cathedra is a privacy-first 3D classroom seating map for an Industry Lecturer at the University of Makati. Status: Pre-implementation.
+Cathedra is a privacy-first 3D classroom seating map for an Industry Lecturer at the University of Makati. Status: Implemented locally. AWS deployment is a separate task.
 
 ## Sources of Truth
 
@@ -37,7 +37,7 @@ If an ignored local context document is absent, do not invent it. For architectu
 
 - `docs/`: Project context documents (local/ignored)
 - `.changeset/`: Changesets versioning config
-- `src/`: Next.js source code (future)
+- `src/`: Browser application, domain operations, storage, and 3D scene
 
 ## Setup and Commands
 
@@ -52,7 +52,7 @@ Treat a configured command as declared until it is actually executed. Report the
 ## Architecture Boundaries
 
 - Strictly Client-Side Rendering (CSR) with `output: "export"`. No server-side runtime.
-- Absolute privacy: All state (4 section rosters) stored exclusively in the browser's LocalStorage/IndexedDB.
+- Student privacy: Configurable section rosters, archives, and assignments stay exclusively in browser LocalStorage.
 - No backend database connections.
 
 ## Development Workflow
@@ -96,7 +96,7 @@ Generated test cases default to `Pending`. Record `Pass`, `Fail`, or `Conditiona
 ## Security
 
 - Vulnerabilities must be reported privately to `help@ahleksu.dev`.
-- Absolutely no data is to be sent from the browser to any external server (CSR only).
+- Student records never enter network requests, URLs, logs, analytics, or published assets. The browser downloads static application assets from its host.
 
 Keep secrets out of code, documentation, logs, test fixtures, screenshots, Issues, and pull requests. Route suspected vulnerabilities privately.
 
