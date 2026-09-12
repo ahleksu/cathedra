@@ -38,3 +38,9 @@ yarn-error.log*
 /docs/ARCHITECTURE_ESSENTIALS.md
 /docs/SECURITY.md
 /docs/TEST_CASES.md
+
+# Local verification artifacts
+*.tsbuildinfo
+playwright-report/
+test-results/
+.superpowers/
